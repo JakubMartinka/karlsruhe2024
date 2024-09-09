@@ -1,0 +1,183 @@
+2024-09-09 15:46:35.626 INFO: Total number of configurations: train=360, valid=91, tests=[]
+2024-09-09 15:46:35.629 INFO: AtomicNumberTable: (1,)
+2024-09-09 15:46:35.630 INFO: Atomic Energies not in training file, using command line argument E0s
+2024-09-09 15:46:35.631 INFO: Computing average Atomic Energies using least squares regression
+2024-09-09 15:46:35.633 INFO: Atomic energies: [-14.069972155243]
+2024-09-09 15:46:35.796 INFO: WeightedEnergyForcesLoss(energy_weight=1.000, forces_weight=1.000)
+2024-09-09 15:46:35.849 INFO: Average number of neighbors: 1.0
+2024-09-09 15:46:35.850 INFO: Selected the following outputs: {'energy': True, 'forces': True, 'virials': False, 'stress': False, 'dipoles': False}
+2024-09-09 15:46:35.852 INFO: Building model
+2024-09-09 15:46:35.854 INFO: Hidden irreps: 128x0e + 128x1o
+2024-09-09 15:46:35.963 WARNING: Standard deviation of the scaling is zero, Changing to no scaling
+2024-09-09 15:46:37.543 INFO: ScaleShiftMACE(
+  (node_embedding): LinearNodeEmbeddingBlock(
+    (linear): Linear(1x0e -> 128x0e | 128 weights)
+  )
+  (radial_embedding): RadialEmbeddingBlock(
+    (bessel_fn): BesselBasis(r_max=5.0, num_basis=8, trainable=False)
+    (cutoff_fn): PolynomialCutoff(p=5.0, r_max=5.0)
+  )
+  (spherical_harmonics): SphericalHarmonics()
+  (atomic_energies_fn): AtomicEnergiesBlock(energies=[-14.0700])
+  (interactions): ModuleList(
+    (0): RealAgnosticInteractionBlock(
+      (linear_up): Linear(128x0e -> 128x0e | 16384 weights)
+      (conv_tp): TensorProduct(128x0e x 1x0e+1x1o+1x2e+1x3o -> 128x0e+128x1o+128x2e+128x3o | 512 paths | 512 weights)
+      (conv_tp_weights): FullyConnectedNet[8, 64, 64, 64, 512]
+      (linear): Linear(128x0e+128x1o+128x2e+128x3o -> 128x0e+128x1o+128x2e+128x3o | 65536 weights)
+      (skip_tp): FullyConnectedTensorProduct(128x0e+128x1o+128x2e+128x3o x 1x0e -> 128x0e+128x1o+128x2e+128x3o | 65536 paths | 65536 weights)
+      (reshape): reshape_irreps()
+    )
+    (1): RealAgnosticResidualInteractionBlock(
+      (linear_up): Linear(128x0e+128x1o -> 128x0e+128x1o | 32768 weights)
+      (conv_tp): TensorProduct(128x0e+128x1o x 1x0e+1x1o+1x2e+1x3o -> 256x0e+384x1o+384x2e+256x3o | 1280 paths | 1280 weights)
+      (conv_tp_weights): FullyConnectedNet[8, 64, 64, 64, 1280]
+      (linear): Linear(256x0e+384x1o+384x2e+256x3o -> 128x0e+128x1o+128x2e+128x3o | 163840 weights)
+      (skip_tp): FullyConnectedTensorProduct(128x0e+128x1o x 1x0e -> 128x0e | 16384 paths | 16384 weights)
+      (reshape): reshape_irreps()
+    )
+  )
+  (products): ModuleList(
+    (0): EquivariantProductBasisBlock(
+      (symmetric_contractions): SymmetricContraction(
+        (contractions): ModuleList(
+          (0): Contraction(
+            (contractions_weighting): ModuleList(
+              (0): GraphModule()
+              (1): GraphModule()
+            )
+            (contractions_features): ModuleList(
+              (0): GraphModule()
+              (1): GraphModule()
+            )
+            (weights): ParameterList(
+                (0): Parameter containing: [torch.float64 of size 1x4x128]
+                (1): Parameter containing: [torch.float64 of size 1x1x128]
+            )
+            (graph_opt_main): GraphModule()
+          )
+          (1): Contraction(
+            (contractions_weighting): ModuleList(
+              (0): GraphModule()
+              (1): GraphModule()
+            )
+            (contractions_features): ModuleList(
+              (0): GraphModule()
+              (1): GraphModule()
+            )
+            (weights): ParameterList(
+                (0): Parameter containing: [torch.float64 of size 1x6x128]
+                (1): Parameter containing: [torch.float64 of size 1x1x128]
+            )
+            (graph_opt_main): GraphModule()
+          )
+        )
+      )
+      (linear): Linear(128x0e+128x1o -> 128x0e+128x1o | 32768 weights)
+    )
+    (1): EquivariantProductBasisBlock(
+      (symmetric_contractions): SymmetricContraction(
+        (contractions): ModuleList(
+          (0): Contraction(
+            (contractions_weighting): ModuleList(
+              (0): GraphModule()
+              (1): GraphModule()
+            )
+            (contractions_features): ModuleList(
+              (0): GraphModule()
+              (1): GraphModule()
+            )
+            (weights): ParameterList(
+                (0): Parameter containing: [torch.float64 of size 1x4x128]
+                (1): Parameter containing: [torch.float64 of size 1x1x128]
+            )
+            (graph_opt_main): GraphModule()
+          )
+        )
+      )
+      (linear): Linear(128x0e -> 128x0e | 16384 weights)
+    )
+  )
+  (readouts): ModuleList(
+    (0): LinearReadoutBlock(
+      (linear): Linear(128x0e+128x1o -> 1x0e | 128 weights)
+    )
+    (1): NonLinearReadoutBlock(
+      (linear_1): Linear(128x0e -> 16x0e | 2048 weights)
+      (non_linearity): Activation [x] (16x0e -> 16x0e)
+      (linear_2): Linear(16x0e -> 1x0e | 16 weights)
+    )
+  )
+  (scale_shift): ScaleShiftBlock(scale=1.000000, shift=0.000000)
+)
+2024-09-09 15:46:37.548 INFO: Number of parameters: 558608
+2024-09-09 15:46:37.551 INFO: Optimizer: Adam (
+Parameter Group 0
+    amsgrad: True
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.01
+    maximize: False
+    name: embedding
+    weight_decay: 0.0
+
+Parameter Group 1
+    amsgrad: True
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.01
+    maximize: False
+    name: interactions_decay
+    weight_decay: 5e-07
+
+Parameter Group 2
+    amsgrad: True
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.01
+    maximize: False
+    name: interactions_no_decay
+    weight_decay: 0.0
+
+Parameter Group 3
+    amsgrad: True
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.01
+    maximize: False
+    name: products
+    weight_decay: 5e-07
+
+Parameter Group 4
+    amsgrad: True
+    betas: (0.9, 0.999)
+    capturable: False
+    differentiable: False
+    eps: 1e-08
+    foreach: None
+    fused: False
+    lr: 0.01
+    maximize: False
+    name: readouts
+    weight_decay: 0.0
+)
+2024-09-09 15:46:37.554 INFO: Using gradient clipping with tolerance=10.000
+2024-09-09 15:46:37.559 INFO: Started training
+2024-09-09 15:46:48.482 INFO: Epoch 0: loss=0.1255, RMSE_E=682.7 meV, RMSE_F=1281.9 meV / A
+2024-09-09 15:47:06.679 INFO: Epoch 2: loss=0.0712, RMSE_E=484.4 meV, RMSE_F=1570.7 meV / A
