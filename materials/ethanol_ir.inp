@@ -1,0 +1,3 @@
+MD2vibr                     # Calculate vibrational spectrum from MD 
+trajH5MDin=ethanol_traj.h5  # Read MD trajectory
+output=ir                   # Calculate infrared spectrum

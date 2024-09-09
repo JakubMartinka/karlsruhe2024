@@ -1,0 +1,6 @@
+method=B3LYP/6-31G*
+QMprog=PySCF
+freq       
+xyzfile=final_B3LYP.xyz
+optprog=ase
+ase.linear=1,0

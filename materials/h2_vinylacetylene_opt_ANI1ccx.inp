@@ -1,0 +1,5 @@
+ANI-1ccx
+geomopt
+xyzfile=h2_vinylacetylene_init.xyz
+optxyz=final_ANI1ccx.xyz
+optprog=ase

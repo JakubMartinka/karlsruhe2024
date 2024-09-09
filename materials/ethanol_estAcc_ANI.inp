@@ -1,0 +1,4 @@
+estAccMLmodel
+MLmodelType=ANI
+XYZfile=ethanol_geometries.xyz
+Yfile=ethanol_energies.txt

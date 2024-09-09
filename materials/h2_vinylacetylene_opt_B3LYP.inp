@@ -1,0 +1,6 @@
+method=B3LYP/6-31G*
+QMprog=PySCF
+geomopt
+xyzfile=h2_vinylacetylene_init.xyz
+optxyz=final_B3LYP.xyz
+optprog=ase

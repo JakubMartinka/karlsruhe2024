@@ -1,0 +1,6 @@
+createMLmodel               # Specify the task for MLatom
+MLmodelType=ANI             # Specify the model type
+MLmodelOut=energies_ani.pt  # Save model in energies_ani.pt 
+XYZfile=h2.xyz              # File with XYZ geometries
+Yfile=E_FCI_451.dat         # The file with FCI energies but can be any other property
+ani.max_epochs=16           # Only train 16 epochs

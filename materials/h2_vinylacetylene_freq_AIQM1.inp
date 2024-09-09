@@ -1,0 +1,5 @@
+AIQM1
+freq       
+xyzfile=final_AIQM1.xyz
+optprog=ase
+ase.linear=1,0
