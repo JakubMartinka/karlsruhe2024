@@ -26,4 +26,4 @@ These tutorials are the result of the contributions by:
 - Fuchun Ge
 - Yifan Hou
 - Mikolaj Martyka
-- Jakub Martinka
+- [Jakub Martinka](https://jakubmartinka.github.io/)
