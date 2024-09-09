@@ -1,5 +1,0 @@
-AIQM1
-geomopt
-xyzfile=h2_vinylacetylene_init.xyz
-optxyz=final_AIQM1.xyz
-optprog=ase

@@ -1,5 +1,0 @@
-geomopt                     # Request geometry optimization
-AIQM1                       # use ANI-1ccx method
-XYZfile=init.xyz            # The file with initial guess
-optXYZ=eq_AIQM1.xyz       # optimized geometry output
-optprog=ase

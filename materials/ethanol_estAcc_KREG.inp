@@ -1,6 +1,0 @@
-estAccMLmodel
-MLmodelType=KREG
-XYZfile=ethanol_geometries.xyz
-Yfile=ethanol_energies.txt
-sigma=opt
-lambda=opt

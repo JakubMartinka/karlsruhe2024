@@ -1,8 +1,0 @@
-createMLmodel           # Specify the task for MLatom
-MLmodelType=KREG        # Specify the model type
-MLmodelOut=energies.unf # Save model in energies.unf
-XYZfile=h2.xyz          # File with XYZ geometries
-Yfile=E_FCI_451.dat     # The file with FCI energies 
-sigma=opt               # Optimize hyperparameter sigma
-lgSigmaL=-4             # Lower bound of log2(sigma)
-lambda=opt              # Optimize hyperparameter lambda

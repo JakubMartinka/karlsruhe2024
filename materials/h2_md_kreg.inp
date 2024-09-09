@@ -1,8 +1,0 @@
-MD                             # molecular dynamics
-initXYZ=h2_md_kreg_init.xyz    # initial geometry; Unit: Angstrom
-initVXYZ=h2_md_kreg_init.vxyz  # initial velocity; Unit: Angstrom/fs
-dt=0.3                         # time step; Unit: fs 
-trun=30                        # total time; Unit: fs 
-MLprog=MLatomF                 # KREG model is implemented in the Fortran part of MLatom 
-MLmodelIn=energies.unf         # file that saves the model 
-ensemble=NVE                   # NVE ensemble 

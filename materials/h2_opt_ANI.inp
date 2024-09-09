@@ -1,5 +1,0 @@
-geomopt                     # Request geometry optimization
-MLmodelType=ANI             # of the KREG type
-MLmodelIn=energies_ani.pt   # in energies_ani.pt file
-XYZfile=h2_init.xyz         # The file with initial guess
-optXYZ=eq_ANI.xyz           # optimized geometry output
