@@ -5,7 +5,7 @@ This is the collection of the [MLatom](https://github.com/dralgroup/mlatom) tuto
 ## How to run the tutorials
 - not recommended but if you insist: you can run the notebooks on [Google colab](https://drive.google.com/drive/folders/18KMn1LW5pXiqC18MX6OBGE9Fyy0DMbZF?usp=sharing).
 - strongly recommended to run the tutorials on the XACS cloud where everything is installed: http://XACScloud.com (registration and basic use is free). After the registration, we will give you access to the Jupyter Lab. The Jupyter notebooks will be available in your home folder: ``jupyter_examples/karlsruhe2024``. Click on 'Jupyter Lab' on the left menu bar, then on 'Launch Server', and finally on 'Connect'.
-- you can also get support on XACS Slack channel: https://join.slack.com/t/xacs-support/shared_invite/zt-1gm1lpn68-pReQhfYGu813eCqwmvdGvA.
+- you can also get support on XACS Slack workspace: https://join.slack.com/t/xacs-support/shared_invite/zt-1gm1lpn68-pReQhfYGu813eCqwmvdGvA (``#karlsruhe2024`` channel)
 
 ## Tutorials
 
