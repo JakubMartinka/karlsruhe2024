@@ -1,6 +1,6 @@
 # MLatom tutorials for the CZS Summer School
 
-This is the collection of the [MLatom](https://github.com/dralgroup/mlatom) tutorials for the [CZS Summer school 2024](https://aimat.iti.kit.edu/ml4chem2024.php) in Karlsruhe. MLatom is a general purpose software platform for AI-enhanced computational chemistry.
+This is the collection of the [MLatom](https://github.com/dralgroup/mlatom) tutorials for the [CZS Summer school 2024](https://aimat.iti.kit.edu/ml4chem2024.php) in Karlsruhe. MLatom is a general purpose software platform for AI-enhanced computational chemistry. MLatom has an extensive documentation with many other useful tutorials: https://xacs.xmu.edu.cn/docs/mlatom/.
 
 ## How to run the tutorials
 - not recommended but if you insist: you can run the notebooks on [Google colab](https://drive.google.com/drive/folders/18KMn1LW5pXiqC18MX6OBGE9Fyy0DMbZF?usp=sharing).
